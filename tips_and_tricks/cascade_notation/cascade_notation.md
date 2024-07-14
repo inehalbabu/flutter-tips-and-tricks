@@ -1,3 +1,10 @@
+# Dart Cascade Notation Example
+
+This repository contains an example demonstrating the use of cascade notation (`..`) in Dart. Cascade notation allows performing a sequence of operations on the same object concisely.
+
+## Example Code
+
+```dart
 class Person {
   String firstName;
   String lastName;
@@ -17,3 +24,9 @@ void main() {
   // Print the details of the person
   print('Name: ${person.firstName} ${person.lastName}, Age: ${person.age}');
 }
+```
+
+## Result
+```dart
+Name: John Doe, Age: 30
+```
