@@ -58,7 +58,3 @@ For any questions or feedback, you can reach out to the project maintainer:
 
 Happy coding!
 
-<div style="text-align: right;">
-![Counts](https://komarev.com/ghpvc/?username=inehalbabu/dart-tips-and-tricks)
-</div>
-
