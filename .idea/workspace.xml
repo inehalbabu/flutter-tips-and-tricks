@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d98586e0-c07d-4bfc-a420-b7925670d7a9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/tips_and_tricks/cascade_notation/cascade_notation.dart" beforeDir="false" afterPath="$PROJECT_DIR$/tips_and_tricks/cascade_notation/cascade_notation.dart" afterDir="false" />
+
+      <change beforePath="$PROJECT_DIR$/LICENCE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENCE" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +35,7 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "cascade__notation",
+    "git-widget-placeholder": "license",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/github_projects/flutter-roadmap",
     "show.migrate.to.gradle.popup": "false"
