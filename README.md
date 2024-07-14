@@ -59,6 +59,6 @@ For any questions or feedback, you can reach out to the project maintainer:
 Happy coding!
 
 <div style="text-align: right;">
-    ![Visitors](https://visitor-badge.glitch.me/badge?page_id=inehalbabu.dart-tips-and-tricks)
+![Page Views](https://simpleanalyticsbadge.com/dart-tips-and-tricks.js)
 </div>
 
