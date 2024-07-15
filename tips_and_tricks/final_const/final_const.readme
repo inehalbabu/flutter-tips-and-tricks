@@ -1,3 +1,17 @@
+# Dart Final and Const Example
+
+This project demonstrates the use of the `final` and `const` keywords in Dart. These keywords are essential for defining variables that either won't change after initialization or are compile-time constants.
+
+## Overview
+
+- `final`: Used for variables that are initialized once and won't change afterwards.
+- `const`: Used for compile-time constant values that are immutable and known at compile time.
+
+## Example Code
+
+The following example showcases how to use `final` and `const` in a Dart application:
+
+```dart
 void main() {
   // Using final for variables that are initialized once and won't change
   final int age = 25;
@@ -33,3 +47,4 @@ void main() {
   print('Circle Radius: ${circle.radius}');
   print('Circle Area: ${circle.getArea()}');
 }
+```
