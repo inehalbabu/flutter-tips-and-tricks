@@ -55,6 +55,7 @@ For any questions or feedback, you can reach out to the project maintainer:
 - **Nehal Babu**
     - Email: [inehalbabu@gmail.com](mailto:inehalbabu@gmail.com)
     - GitHub: [Nehal Babu](https://github.com/inehalbabu)
+    - LinkedIn: [Nehal Babu](https://www.linkedin.com/in/inehalbabu)
 
 Happy coding!
 
