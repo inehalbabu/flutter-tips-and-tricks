@@ -40,7 +40,7 @@ Contributions are always welcome! If you have a tip or trick that you'd like to 
 3. Add your tip or trick to the appropriate file in the `tips_and_tricks` directory
 4. Commit your changes (`git commit -am 'Add new tip'`)
 5. Push to the branch (`git push origin feature-new-tip`)
-6. Create a new Pull Request
+6. Create a new Pull Request 
 
 Please make sure to follow the contribution guidelines outlined in `CONTRIBUTING.md`.
 
