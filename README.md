@@ -1,6 +1,6 @@
-# Dart Tips and Tricks
+# Flutter Tips and Tricks
 
-Welcome to the **Dart Tips and Tricks** repository! This collection is designed to provide helpful tips and tricks for working with the Dart programming language. Whether you're a beginner or an experienced developer, you'll find valuable insights to enhance your Dart coding skills.
+Welcome to the **Flutter Tips and Tricks** repository! This collection is designed to provide helpful tips and tricks for working with the Flutter programming language. Whether you're a beginner or an experienced developer, you'll find valuable insights to enhance your Flutter and Dart coding skills.
 
 ## Table of Contents
 
