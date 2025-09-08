@@ -40,7 +40,7 @@ git clone https://github.com/inehalbabu/flutter-tips-and-tricks.git
 cd flutter-tips-and-tricks
 ```
 
-## Repository Structure
+<!-- ## Repository Structure
 
 ```text
 flutter-tips-and-tricks/
@@ -71,7 +71,7 @@ flutter-tips-and-tricks/
     string_manipulation/
       string_manupulation.md
       string_manupulation.dart
-```
+``` -->
 
 ## Tips Index
 
@@ -85,7 +85,7 @@ flutter-tips-and-tricks/
 | Spread operator (`...`, `...?`) | [Guide](tips_and_tricks/spread_operator/spread_operator.md) | [Code](tips_and_tricks/spread_operator/spread_operator.dart) | `dart tips_and_tricks/spread_operator/spread_operator.dart` |
 | String manipulation | [Guide](tips_and_tricks/string_manipulation/string_manupulation.md) | [Code](tips_and_tricks/string_manipulation/string_manupulation.dart) | `dart tips_and_tricks/string_manipulation/string_manupulation.dart` |
 
-## How to Run the Examples
+<!-- ## How to Run the Examples
 
 Each tip includes a `.dart` file that you can run directly with the Dart CLI:
 
@@ -97,7 +97,7 @@ dart tips_and_tricks/late_keyword/late_keyword.dart
 dart tips_and_tricks/null_aware_operator/null_aware_operator.dart
 dart tips_and_tricks/spread_operator/spread_operator.dart
 dart tips_and_tricks/string_manipulation/string_manupulation.dart
-```
+``` -->
 
 ## More Tips & Snippets
 
@@ -254,6 +254,138 @@ dart tips_and_tricks/string_manipulation/string_manupulation.dart
       print(v); // 10, 30, 50
     }
   }
+  ```
+
+ - Flutter: Stateless vs Stateful quick pattern:
+
+  ```dart
+  import 'package:flutter/material.dart';
+
+  class HelloStateless extends StatelessWidget {
+    const HelloStateless({super.key});
+    @override
+    Widget build(BuildContext context) => const Text('Hello');
+  }
+
+  class CounterStateful extends StatefulWidget {
+    const CounterStateful({super.key});
+    @override
+    State<CounterStateful> createState() => _CounterStatefulState();
+  }
+
+  class _CounterStatefulState extends State<CounterStateful> {
+    int count = 0;
+    @override
+    Widget build(BuildContext context) => Column(children: [
+          Text('$count'),
+          ElevatedButton(onPressed: () => setState(() => count++), child: const Text('+')),
+        ]);
+  }
+  ```
+
+- Flutter: Layout basics (Row, Column, Expanded):
+
+  ```dart
+  Row(
+    children: const [
+      Expanded(child: ColoredBox(color: Colors.red, child: SizedBox(height: 40))),
+      SizedBox(width: 8),
+      Expanded(child: ColoredBox(color: Colors.blue, child: SizedBox(height: 40))),
+    ],
+  )
+  ```
+
+- Flutter: Theming and dark mode toggle:
+
+  ```dart
+  MaterialApp(
+    theme: ThemeData.light(),
+    darkTheme: ThemeData.dark(),
+    themeMode: ThemeMode.system, // switch to .dark / .light to force
+    home: const Scaffold(body: Center(child: Text('Themed'))),
+  )
+  ```
+
+- Flutter: Navigator push/pop:
+
+  ```dart
+  Navigator.of(context).push(
+    MaterialPageRoute(builder: (_) => const DetailsPage()),
+  );
+  // later
+  Navigator.of(context).pop();
+  ```
+
+- Flutter: Simple `ListView.builder`:
+
+  ```dart
+  ListView.builder(
+    itemCount: items.length,
+    itemBuilder: (context, index) => ListTile(title: Text(items[index])),
+  )
+  ```
+
+- Flutter: FutureBuilder pattern:
+
+  ```dart
+  FutureBuilder<String>(
+    future: fetchTitle(),
+    builder: (context, snapshot) {
+      if (snapshot.connectionState == ConnectionState.waiting) return const CircularProgressIndicator();
+      if (snapshot.hasError) return Text('Error: ${snapshot.error}');
+      return Text(snapshot.data ?? '');
+    },
+  )
+  ```
+
+- Flutter: StreamBuilder pattern:
+
+  ```dart
+  StreamBuilder<int>(
+    stream: counterStream(),
+    builder: (context, snapshot) {
+      switch (snapshot.connectionState) {
+        case ConnectionState.waiting:
+          return const CircularProgressIndicator();
+        default:
+          if (snapshot.hasError) return Text('Error: ${snapshot.error}');
+          return Text('${snapshot.data}');
+      }
+    },
+  )
+  ```
+
+- Flutter: `ValueNotifier` and `ValueListenableBuilder`:
+
+  ```dart
+  final counter = ValueNotifier<int>(0);
+
+  ValueListenableBuilder<int>(
+    valueListenable: counter,
+    builder: (_, value, __) => Column(children: [
+      Text('$value'),
+      ElevatedButton(onPressed: () => counter.value++, child: const Text('+')),
+    ]),
+  )
+  ```
+
+- Flutter: `ChangeNotifier` with `AnimatedBuilder`:
+
+  ```dart
+  class Counter extends ChangeNotifier {
+    int value = 0;
+    void inc() { value++; notifyListeners(); }
+  }
+
+  final counter = Counter();
+
+  AnimatedBuilder(
+    animation: counter,
+    builder: (_, __) => Column(children: [
+      Text('${counter.value}'),
+      ElevatedButton(onPressed: counter.inc, child: const Text('+')),
+    ]),
+  )
   ```
 
 ## Add a New Tip
