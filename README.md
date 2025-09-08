@@ -75,13 +75,15 @@ flutter-tips-and-tricks/
 
 ## Tips Index
 
-- Anonymous functions — [Guide](tips_and_tricks/anonymous_function/anonymous_function.md) · [Code](tips_and_tricks/anonymous_function/anonymous_function.dart)
-- Cascade notation (`..`) — [Guide](tips_and_tricks/cascade_notation/cascade_notation.md) · [Code](tips_and_tricks/cascade_notation/cascade_notation.dart)
-- `final` vs `const` — [Guide](tips_and_tricks/final_const/final_const.md) · [Code](tips_and_tricks/final_const/final_const.dart)
-- `late` keyword — [Guide](tips_and_tricks/late_keyword/late_keyword.md) · [Code](tips_and_tricks/late_keyword/late_keyword.dart)
-- Null-aware operators (`?.`, `??`) — [Guide](tips_and_tricks/null_aware_operator/null_aware_operator.md) · [Code](tips_and_tricks/null_aware_operator/null_aware_operator.dart)
-- Spread operator (`...`, `...?`) — [Guide](tips_and_tricks/spread_operator/spread_operator.md) · [Code](tips_and_tricks/spread_operator/spread_operator.dart)
-- String manipulation — [Guide](tips_and_tricks/string_manipulation/string_manupulation.md) · [Code](tips_and_tricks/string_manipulation/string_manupulation.dart)
+| Topic | Guide | Code | Run |
+| --- | --- | --- | --- |
+| Anonymous functions | [Guide](tips_and_tricks/anonymous_function/anonymous_function.md) | [Code](tips_and_tricks/anonymous_function/anonymous_function.dart) | `dart tips_and_tricks/anonymous_function/anonymous_function.dart` |
+| Cascade notation (`..`) | [Guide](tips_and_tricks/cascade_notation/cascade_notation.md) | [Code](tips_and_tricks/cascade_notation/cascade_notation.dart) | `dart tips_and_tricks/cascade_notation/cascade_notation.dart` |
+| `final` vs `const` | [Guide](tips_and_tricks/final_const/final_const.md) | [Code](tips_and_tricks/final_const/final_const.dart) | `dart tips_and_tricks/final_const/final_const.dart` |
+| `late` keyword | [Guide](tips_and_tricks/late_keyword/late_keyword.md) | [Code](tips_and_tricks/late_keyword/late_keyword.dart) | `dart tips_and_tricks/late_keyword/late_keyword.dart` |
+| Null-aware operators (`?.`, `??`) | [Guide](tips_and_tricks/null_aware_operator/null_aware_operator.md) | [Code](tips_and_tricks/null_aware_operator/null_aware_operator.dart) | `dart tips_and_tricks/null_aware_operator/null_aware_operator.dart` |
+| Spread operator (`...`, `...?`) | [Guide](tips_and_tricks/spread_operator/spread_operator.md) | [Code](tips_and_tricks/spread_operator/spread_operator.dart) | `dart tips_and_tricks/spread_operator/spread_operator.dart` |
+| String manipulation | [Guide](tips_and_tricks/string_manipulation/string_manupulation.md) | [Code](tips_and_tricks/string_manipulation/string_manupulation.dart) | `dart tips_and_tricks/string_manipulation/string_manupulation.dart` |
 
 ## How to Run the Examples
 
@@ -96,6 +98,73 @@ dart tips_and_tricks/null_aware_operator/null_aware_operator.dart
 dart tips_and_tricks/spread_operator/spread_operator.dart
 dart tips_and_tricks/string_manipulation/string_manupulation.dart
 ```
+
+## More Tips & Snippets
+
+- Assertions in development:
+
+  ```dart
+  void main() {
+    assert(1 + 1 == 2); // Removed in release builds
+  }
+  ```
+
+- String interpolation and raw strings:
+
+  ```dart
+  void main() {
+    final name = 'Dart';
+    print('Hello, $name!');
+    print(r'C:\path\to\file'); // raw string, backslashes not escaped
+  }
+  ```
+
+- Collection-if and collection-for:
+
+  ```dart
+  void main() {
+    final includeExtra = true;
+    final base = [1, 2, 3];
+    final list = [
+      for (final n in base) n * 2,
+      if (includeExtra) 99,
+    ];
+    print(list); // [2, 4, 6, 99]
+  }
+  ```
+
+- Using `map`, `where`, `reduce` on collections:
+
+  ```dart
+  void main() {
+    final nums = [1, 2, 3, 4];
+    final evensSquared = nums.where((n) => n.isEven).map((n) => n * n).toList();
+    final sum = nums.reduce((a, b) => a + b);
+    print(evensSquared); // [4, 16]
+    print(sum); // 10
+  }
+  ```
+
+- Ternary operator and null-coalescing together:
+
+  ```dart
+  void main() {
+    String? nick;
+    final display = (nick != null && nick!.isNotEmpty) ? nick : 'Guest';
+    final safe = nick ?? 'Guest';
+    print(display);
+    print(safe);
+  }
+  ```
+
+- `DateTime` and formatting basics:
+
+  ```dart
+  void main() {
+    final now = DateTime.now();
+    print(now.toIso8601String());
+  }
+  ```
 
 ## Add a New Tip
 
