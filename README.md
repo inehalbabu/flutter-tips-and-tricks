@@ -166,6 +166,96 @@ dart tips_and_tricks/string_manipulation/string_manupulation.dart
   }
   ```
 
+ - Extension methods:
+
+  ```dart
+  extension StringCasing on String {
+    String get capitalized => isEmpty ? this : this[0].toUpperCase() + substring(1);
+  }
+
+  void main() {
+    print('dart'.capitalized); // Dart
+  }
+  ```
+
+- Enums with members and methods:
+
+  ```dart
+  enum Status {
+    pending(0), inProgress(1), done(2);
+    const Status(this.code);
+    final int code;
+    bool get isTerminal => this == Status.done;
+  }
+
+  void main() {
+    final s = Status.inProgress;
+    print(s.code); // 1
+    print(Status.done.isTerminal); // true
+  }
+  ```
+
+- Records and pattern matching (Dart 3):
+
+  ```dart
+  (int, String) pair() => (1, 'one');
+
+  void main() {
+    final (n, text) = pair();
+    switch ((n, text)) {
+      case (>= 1, 'one'):
+        print('Matched');
+      default:
+        print('Other');
+    }
+  }
+  ```
+
+- Switch expressions (Dart 3):
+
+  ```dart
+  String levelLabel(int score) => switch (score) {
+        < 50 => 'Beginner',
+        >= 50 && < 80 => 'Intermediate',
+        _ => 'Advanced',
+      };
+
+  void main() {
+    print(levelLabel(72)); // Intermediate
+  }
+  ```
+
+- Async/await basics:
+
+  ```dart
+  Future<String> fetch() async {
+    await Future.delayed(Duration(milliseconds: 100));
+    return 'done';
+  }
+
+  void main() async {
+    final v = await fetch();
+    print(v);
+  }
+  ```
+
+- Streams: map, where, listen:
+
+  ```dart
+  Stream<int> counter(int n) async* {
+    for (var i = 1; i <= n; i++) {
+      await Future.delayed(Duration(milliseconds: 50));
+      yield i;
+    }
+  }
+
+  void main() async {
+    await for (final v in counter(5).where((e) => e.isOdd).map((e) => e * 10)) {
+      print(v); // 10, 30, 50
+    }
+  }
+  ```
+
 ## Add a New Tip
 
 Contributions are welcome! To add a new tip:
