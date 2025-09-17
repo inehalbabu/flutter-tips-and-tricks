@@ -7,8 +7,7 @@ higher-order functions. This document explains the concept and provides examples
 **Syntax**:
 
    ```dart
-   (
-parameters) {
+   (parameters) {
 // Function body
 }
    ```
