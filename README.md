@@ -2,20 +2,6 @@
 
 Welcome to the **Flutter Tips and Tricks** repository! This collection focuses on practical Dart language tips and patterns that are especially useful when building Flutter apps. Each tip includes a short guide and a runnable Dart example.
 
-## Table of Contents
-
-1. [Overview](#overview)
-2. [Prerequisites](#prerequisites)
-3. [Quick Start](#quick-start)
-4. [Repository Structure](#repository-structure)
-5. [Tips Index](#tips-index)
-6. [How to Run the Examples](#how-to-run-the-examples)
-7. [Add a New Tip](#add-a-new-tip)
-8. [Roadmap](#roadmap)
-9. [Contributing](#contributing)
-10. [License](#license)
-11. [Contact](#contact)
-
 ## Overview
 
 This repository compiles concise, copy-paste friendly examples that teach core Dart concepts and language features commonly used in Flutter development. It is great for quick learning, onboarding, or refreshing fundamentals.
@@ -84,6 +70,21 @@ flutter-tips-and-tricks/
 | Null-aware operators (`?.`, `??`) | [Guide](tips_and_tricks/null_aware_operator/null_aware_operator.md) | [Code](tips_and_tricks/null_aware_operator/null_aware_operator.dart) | `dart tips_and_tricks/null_aware_operator/null_aware_operator.dart` |
 | Spread operator (`...`, `...?`) | [Guide](tips_and_tricks/spread_operator/spread_operator.md) | [Code](tips_and_tricks/spread_operator/spread_operator.dart) | `dart tips_and_tricks/spread_operator/spread_operator.dart` |
 | String manipulation | [Guide](tips_and_tricks/string_manipulation/string_manupulation.md) | [Code](tips_and_tricks/string_manipulation/string_manupulation.dart) | `dart tips_and_tricks/string_manipulation/string_manupulation.dart` |
+
+
+## Table of Contents
+
+1. [Overview](#overview)
+2. [Prerequisites](#prerequisites)
+3. [Quick Start](#quick-start)
+4. [Repository Structure](#repository-structure)
+5. [Tips Index](#tips-index)
+6. [How to Run the Examples](#how-to-run-the-examples)
+7. [Add a New Tip](#add-a-new-tip)
+8. [Roadmap](#roadmap)
+9. [Contributing](#contributing)
+10. [License](#license)
+11. [Contact](#contact)
 
 <!-- ## How to Run the Examples
 
