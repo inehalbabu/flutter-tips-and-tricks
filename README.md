@@ -14,27 +14,6 @@ Welcome to the **Flutter Tips and Tricks** repository! This collection focuses o
 | Spread operator (`...`, `...?`) | [Guide](tips_and_tricks/spread_operator/spread_operator.md) | [Code](tips_and_tricks/spread_operator/spread_operator.dart) | `dart tips_and_tricks/spread_operator/spread_operator.dart` |
 | String manipulation | [Guide](tips_and_tricks/string_manipulation/string_manupulation.md) | [Code](tips_and_tricks/string_manipulation/string_manupulation.dart) | `dart tips_and_tricks/string_manipulation/string_manupulation.dart` |
 
-
-## Add a New Tip
-
-Contributions are welcome! To add a new tip:
-
-1. Create a new folder under `tips_and_tricks/` using `snake_case` (for example, `my_new_tip/`).
-2. Add two files inside that folder:
-   - A guide: `my_new_tip.md` explaining the concept, with code snippets and output.
-   - A runnable example: `my_new_tip.dart` that demonstrates the concept.
-3. Update the [Tips Index](#tips-index) above with links to your files.
-4. Submit a pull request following the steps in [CONTRIBUTING.md](CONTRIBUTING.md).
-
-Suggested folder template:
-
-```text
-tips_and_tricks/
-  my_new_tip/
-    my_new_tip.md
-    my_new_tip.dart
-```
-
 ## Roadmap
 
 See the curated learning path in [`roadmap/flutter_roadmap.md`](roadmap/flutter_roadmap.md).
