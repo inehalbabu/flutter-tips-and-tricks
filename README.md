@@ -2,63 +2,6 @@
 
 Welcome to the **Flutter Tips and Tricks** repository! This collection focuses on practical Dart language tips and patterns that are especially useful when building Flutter apps. Each tip includes a short guide and a runnable Dart example.
 
-## Overview
-
-This repository compiles concise, copy-paste friendly examples that teach core Dart concepts and language features commonly used in Flutter development. It is great for quick learning, onboarding, or refreshing fundamentals.
-
-## Prerequisites
-
-- Dart SDK installed: see the [official install guide](https://dart.dev/get-dart)
-- Optional (for Flutter projects): [Install Flutter](https://flutter.dev/docs/get-started/install)
-
-Verify your setup:
-
-```powershell
-dart --version
-```
-
-## Quick Start
-
-Clone and explore the examples locally:
-
-```powershell
-git clone https://github.com/inehalbabu/flutter-tips-and-tricks.git
-cd flutter-tips-and-tricks
-```
-
-<!-- ## Repository Structure
-
-```text
-flutter-tips-and-tricks/
-  CONTRIBUTING.md
-  LICENCE
-  README.md
-  roadmap/
-    flutter_roadmap.md
-  tips_and_tricks/
-    anonymous_function/
-      anonymous_function.md
-      anonymous_function.dart
-    cascade_notation/
-      cascade_notation.md
-      cascade_notation.dart
-    final_const/
-      final_const.md
-      final_const.dart
-    late_keyword/
-      late_keyword.md
-      late_keyword.dart
-    null_aware_operator/
-      null_aware_operator.md
-      null_aware_operator.dart
-    spread_operator/
-      spread_operator.md
-      spread_operator.dart
-    string_manipulation/
-      string_manupulation.md
-      string_manupulation.dart
-``` -->
-
 ## Tips Index
 
 | Topic | Guide | Code | Run |
