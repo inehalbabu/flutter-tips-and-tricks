@@ -1,18 +1,40 @@
 # Flutter Tips and Tricks
 
-Welcome to the **Flutter Tips and Tricks** repository! This collection focuses on practical Dart language tips and patterns that are especially useful when building Flutter apps. Each tip includes a short guide and a runnable Dart example.
+Welcome to **Flutter Tips and Tricks** — a practical, beginner-friendly collection of **Dart + Flutter** tips that help you write cleaner code, build better UI, and avoid common mistakes.
 
-## Tips Index
+## How to use this repo
+
+- **Read**: each topic has a short guide (Markdown).
+- **Run** (Dart tips): most topics include a runnable `.dart` file.
+
+```bash
+dart path/to/example.dart
+```
+
+## Dart tips (runnable)
 
 | Topic | Guide | Code | Run |
 | --- | --- | --- | --- |
 | Anonymous functions | [Guide](tips_and_tricks/anonymous_function/anonymous_function.md) | [Code](tips_and_tricks/anonymous_function/anonymous_function.dart) | `dart tips_and_tricks/anonymous_function/anonymous_function.dart` |
 | Cascade notation (`..`) | [Guide](tips_and_tricks/cascade_notation/cascade_notation.md) | [Code](tips_and_tricks/cascade_notation/cascade_notation.dart) | `dart tips_and_tricks/cascade_notation/cascade_notation.dart` |
+| Collection `if` / `for` | [Guide](tips_and_tricks/collection_if_for/collection_if_for.md) | [Code](tips_and_tricks/collection_if_for/collection_if_for.dart) | `dart tips_and_tricks/collection_if_for/collection_if_for.dart` |
+| Debounce vs throttle | [Guide](tips_and_tricks/debounce_throttle/debounce_throttle.md) | [Code](tips_and_tricks/debounce_throttle/debounce_throttle.dart) | `dart tips_and_tricks/debounce_throttle/debounce_throttle.dart` |
+| Extension methods | [Guide](tips_and_tricks/extension_methods/extension_methods.md) | [Code](tips_and_tricks/extension_methods/extension_methods.dart) | `dart tips_and_tricks/extension_methods/extension_methods.dart` |
 | `final` vs `const` | [Guide](tips_and_tricks/final_const/final_const.md) | [Code](tips_and_tricks/final_const/final_const.dart) | `dart tips_and_tricks/final_const/final_const.dart` |
 | `late` keyword | [Guide](tips_and_tricks/late_keyword/late_keyword.md) | [Code](tips_and_tricks/late_keyword/late_keyword.dart) | `dart tips_and_tricks/late_keyword/late_keyword.dart` |
 | Null-aware operators (`?.`, `??`) | [Guide](tips_and_tricks/null_aware_operator/null_aware_operator.md) | [Code](tips_and_tricks/null_aware_operator/null_aware_operator.dart) | `dart tips_and_tricks/null_aware_operator/null_aware_operator.dart` |
 | Spread operator (`...`, `...?`) | [Guide](tips_and_tricks/spread_operator/spread_operator.md) | [Code](tips_and_tricks/spread_operator/spread_operator.dart) | `dart tips_and_tricks/spread_operator/spread_operator.dart` |
 | String manipulation | [Guide](tips_and_tricks/string_manipulation/string_manupulation.md) | [Code](tips_and_tricks/string_manipulation/string_manupulation.dart) | `dart tips_and_tricks/string_manipulation/string_manupulation.dart` |
+
+## Flutter tips (guides)
+
+| Topic | Guide |
+| --- | --- |
+| Prefer `const` widgets | [Guide](flutter_tips/const_everywhere.md) |
+| Use `context.mounted` after `await` | [Guide](flutter_tips/context_mounted.md) |
+| List performance essentials | [Guide](flutter_tips/listview_performance.md) |
+| Layout constraints (common errors) | [Guide](flutter_tips/layout_constraints.md) |
+| Keys in dynamic lists | [Guide](flutter_tips/keys_in_lists.md) |
 
 ## Roadmap
 

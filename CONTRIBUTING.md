@@ -1,6 +1,6 @@
-# Contributing to Dart Tips and Tricks
+# Contributing to Flutter Tips and Tricks
 
-🎉 Thank you for considering contributing to Dart Tips and Tricks! 🎉
+🎉 Thank you for considering contributing to Flutter Tips and Tricks! 🎉
 
 The following is a set of guidelines for contributing to this repository. Please take a moment to review this document to ensure a smooth and effective contribution process.
 
@@ -8,7 +8,7 @@ The following is a set of guidelines for contributing to this repository. Please
 
 ### Reporting Issues
 
-If you encounter any issues with the code examples or have suggestions for improvement, please feel free to [open an issue](https://github.com/inehalbabu/dart-tips-and-tricks/issues/new). When reporting issues, please provide detailed information and, if possible, include code snippets or screenshots that illustrate the problem.
+If you encounter any issues with the examples or have suggestions for improvement, please feel free to open an issue in this repository. When reporting issues, please provide detailed information and, if possible, include code snippets or screenshots that illustrate the problem.
 
 ### Submitting Pull Requests (PRs)
 
@@ -26,7 +26,7 @@ We welcome your pull requests! Before submitting a PR, please ensure the followi
 
 6. **Push Your Changes:** Push your branch to your forked repository.
 
-7. **Submit PR:** Finally, [submit a pull request](https://github.com/inehalbabu/dart-tips-and-tricks/compare) with a description of your changes and a reference to any related issues.
+7. **Submit PR:** Finally, submit a pull request with a description of your changes and a reference to any related issues.
 
 ## Code of Conduct
 
@@ -34,7 +34,7 @@ This project and everyone participating in it is governed by our [Code of Conduc
 
 ## License
 
-By contributing to Dart Tips and Tricks, you agree that your contributions will be licensed under the MIT License, as specified in the [LICENSE](LICENSE) file.
+By contributing to Flutter Tips and Tricks, you agree that your contributions will be licensed under the MIT License, as specified in the [`LICENCE`](LICENCE) file.
 
 ## Acknowledgments
 
