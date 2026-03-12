@@ -1,0 +1,17 @@
+Future<String> fetchUserName({required bool shouldFail}) async {
+  await Future<void>.delayed(const Duration(milliseconds: 100));
+  if (shouldFail) throw Exception('Network error');
+  return 'Nehal';
+}
+
+Future<void> main() async {
+  try {
+    final name = await fetchUserName(shouldFail: false);
+    print('Hello $name');
+  } on Exception catch (e) {
+    print('Expected error: $e');
+  } finally {
+    print('Cleanup always runs');
+  }
+}
+
