@@ -1,15 +1,45 @@
 # Flutter Tips and Tricks
 
-Welcome to **Flutter Tips and Tricks** — a practical, beginner-friendly collection of **Dart + Flutter** tips that help you write cleaner code, build better UI, and avoid common mistakes.
+<p align="center">
+  <strong>Learn Flutter faster with bite-sized, practical tips.</strong><br/>
+  Dart patterns + Flutter best practices + common pitfalls (with runnable examples).
+</p>
 
-## How to use this repo
+<p align="center">
+  <a href="LICENCE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"></a>
+  <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome"></a>
+  <a href="roadmap/flutter_roadmap.md"><img src="https://img.shields.io/badge/Learning%20path-Roadmap-8A2BE2" alt="Roadmap"></a>
+</p>
 
-- **Read**: each topic has a short guide (Markdown).
-- **Run** (Dart tips): most topics include a runnable `.dart` file.
+Welcome to **Flutter Tips and Tricks** — a beginner-friendly collection of **Dart + Flutter** tips that help you write cleaner code, build better UI, and avoid common mistakes.
+
+## Table of contents
+
+- [Start here](#start-here)
+- [What you’ll learn](#what-youll-learn)
+- [Dart tips (runnable)](#dart-tips-runnable)
+- [Flutter tips (guides)](#flutter-tips-guides)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## Start here
+
+- **New to Flutter?** Follow the curated learning path in [`roadmap/flutter_roadmap.md`](roadmap/flutter_roadmap.md).
+- **Want quick wins?** Pick any tip below and read the guide in 2–5 minutes.
+- **Want to practice?** Run the Dart examples locally.
 
 ```bash
 dart path/to/example.dart
 ```
+
+## What you’ll learn
+
+- **Dart language patterns** you’ll use daily in Flutter code
+- **Widget + layout fundamentals** (constraints, lists, keys)
+- **Performance habits** that prevent jank early
+- **Safe async UI** (avoiding “setState called after dispose” style bugs)
 
 ## Dart tips (runnable)
 
@@ -41,6 +71,12 @@ dart path/to/example.dart
 See the curated learning path in [`roadmap/flutter_roadmap.md`](roadmap/flutter_roadmap.md).
 
 ## Contributing
+
+Contributions are welcome.
+
+- Add a new tip (guide + optional runnable example)
+- Improve an existing tip (clarity, correctness, formatting)
+- Fix typos / broken links
 
 Please read the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md) before submitting changes.
 
