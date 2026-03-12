@@ -8,7 +8,7 @@
 <p align="center">
   <a href="LICENCE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"></a>
   <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome"></a>
-  <a href="roadmap/flutter_roadmap.md"><img src="https://img.shields.io/badge/Learning%20path-Roadmap-8A2BE2" alt="Roadmap"></a>
+  <a href="ROADMAP.md"><img src="https://img.shields.io/badge/Learning%20path-Roadmap-8A2BE2" alt="Roadmap"></a>
 </p>
 
 Welcome to **Flutter Tips and Tricks** — a beginner-friendly collection of **Dart + Flutter** tips that help you write cleaner code, build better UI, and avoid common mistakes.
@@ -17,16 +17,17 @@ Welcome to **Flutter Tips and Tricks** — a beginner-friendly collection of **D
 
 - [Start here](#start-here)
 - [What you’ll learn](#what-youll-learn)
+- [Quick code (copy/paste)](#quick-code-copypaste)
 - [Dart tips (runnable)](#dart-tips-runnable)
 - [Flutter tips (guides)](#flutter-tips-guides)
-- [Roadmap](#roadmap)
+- [Flutter roadmap](#flutter-roadmap)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
 
 ## Start here
 
-- **New to Flutter?** Follow the curated learning path in [`roadmap/flutter_roadmap.md`](roadmap/flutter_roadmap.md).
+- **New to Flutter?** Start with the roadmap in [`ROADMAP.md`](ROADMAP.md).
 - **Want quick wins?** Pick any tip below and read the guide in 2–5 minutes.
 - **Want to practice?** Run the Dart examples locally.
 
@@ -40,6 +41,33 @@ dart path/to/example.dart
 - **Widget + layout fundamentals** (constraints, lists, keys)
 - **Performance habits** that prevent jank early
 - **Safe async UI** (avoiding “setState called after dispose” style bugs)
+
+## Quick code (copy/paste)
+
+### Dart: collection `if` + `for` (great for widget lists)
+
+```dart
+final isPremium = true;
+final features = ['Search', 'Offline', 'Sync'];
+
+final menu = <String>[
+  'Home',
+  if (isPremium) 'Premium',
+  for (final f in features) 'Feature: $f',
+];
+```
+
+### Flutter: safe `await` with `context.mounted`
+
+```dart
+onPressed: () async {
+  await Future<void>.delayed(const Duration(milliseconds: 400));
+  if (!context.mounted) return;
+  ScaffoldMessenger.of(context).showSnackBar(
+    const SnackBar(content: Text('Saved!')),
+  );
+},
+```
 
 ## Dart tips (runnable)
 
@@ -66,9 +94,17 @@ dart path/to/example.dart
 | Layout constraints (common errors) | [Guide](flutter_tips/layout_constraints.md) |
 | Keys in dynamic lists | [Guide](flutter_tips/keys_in_lists.md) |
 
-## Roadmap
+## Flutter roadmap
 
-See the curated learning path in [`roadmap/flutter_roadmap.md`](roadmap/flutter_roadmap.md).
+Start with [`ROADMAP.md`](ROADMAP.md). For the detailed, link-rich version, see [`roadmap/flutter_roadmap.md`](roadmap/flutter_roadmap.md).
+
+**Suggested order (high level):**
+
+- **Foundations**: Dart basics, widgets, layouts, navigation
+- **State**: setState → Provider/Riverpod/BLoC (pick one and go deep)
+- **Data**: REST/GraphQL, caching, local storage
+- **Architecture**: separation of concerns, DI, testing
+- **Shipping**: performance, CI/CD, store release
 
 ## Contributing
 
